@@ -1,3 +1,39 @@
+## Repository Enhancement
+
+The original repository for the OPi.GPIO library, available at [https://github.com/rm-hull/OPi.GPIO](https://github.com/rm-hull/OPi.GPIO), has been enhanced to support additional boards: Orange Pi 3B and Orange Pi Zero 3.
+
+### Key Modifications:
+
+- **Added Support for Orange Pi 3B:**
+  - Incorporated mappings for GPIO pins specific to Orange Pi 3B board.
+  - Introduced `pi3b.py` file defining pin mappings for Orange Pi 3B.
+  
+- **Support for Orange Pi Zero 3:**
+  - Included new board support: Orange Pi Zero 3.
+  - Presumably added a new file for the GPIO pin mappings for Orange Pi Zero 3.
+  
+These enhancements extend the functionality of the original OPi.GPIO repository by enabling compatibility and GPIO pin mappings for the Orange Pi 3B and Orange Pi Zero 3 boards.
+
+### Installation
+To install the enhanced version of OPi.GPIO, use the following pip command:
+
+```bash
+pip3 install terindo.gpio==0.0.1
+
+
+``` python
+import OPi.GPIO as GPIO
+#import orangepi.zero3
+import orangepi.pi3b
+
+#GPIO.setmode(orangepi.zero3.BOARD)
+GPIO.setmode(orangepi.pi3b.BOARD)
+
+
+
+
+## Original README
+
 OPi.GPIO
 ========
 
