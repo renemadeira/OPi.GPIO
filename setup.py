@@ -21,16 +21,16 @@ pytest_runner = ['pytest-runner'] if needs_pytest else []
 test_deps = ["mock", "pytest", "pytest-cov", "pyfakefs"]
 
 setup(
-    name="OPi.GPIO",
+    name="terindo.gpio",
     version=version,
-    author="Richard Hull",
-    author_email="richard.hull@destructuring-bind.org",
+    author="terindo",
+    author_email="terindo.id@gmail.com",
     description=("A drop-in replacement for RPi.GPIO for the Orange Pi Zero"),
     long_description="\n\n".join([README, CONTRIB, CHANGES]),
     license="MIT",
     keywords="orange pi opi gpio",
-    url="https://github.com/rm-hull/OPi.GPIO",
-    download_url="https://github.com/rm-hull/OPi.GPIO/tarball/" + version,
+    url="https://github.com/terindo/OPi.GPIO",
+    download_url="https://github.com/terindo/OPi.GPIO/tarball/" + version,
     packages=["OPi", "nanopi", "orangepi", "rockpi"],
     setup_requires=pytest_runner,
     tests_require=test_deps,
